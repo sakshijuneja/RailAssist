@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Sign In</title>
+</head>
+<body>
+<!-- nav -->
+<nav class="text-white nav-text navbar navbar-expand-lg fixed-top" style="background-color: #607EAA;">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand text-white" href="index.html">
+              <img src="logo.png" width="60" height="60" class="d-inline-block" alt=""> <b>RAIL ASSIST</b>
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link text-white" aria-current="page" href="#faq">FAQs</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link text-white" aria-current="page" href="blogpage.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+              </li>
+
+          </ul>
+          
+      </div>
+  </div>
+</nav>
+<!-- nav end -->
+    <form method="post" >
+     <label for="name">Name</label>
+       <input type="text" name="name" id="name" placeholder="Name"><hr>
+       <label for="age">Age</label>
+       <input type="number" name="age" id="age" placeholder="Age"><hr>
+       <label for="Gender">Gender</label>
+       <select id="Gender" name="Gender">
+        <option value=""> </option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select><hr>
+       <label for="number">Phone Number </label>
+       <input type="tel" name="phone" id="number" placeholder="Phone Number" pattern="[0-9]{10}" title="Please Enter a valid phone number"><hr>
+       <label for="email">E-mail</label>
+       <input type="email" name="email" id="email" placeholder="Email"><hr>
+       <label for="Mobility Impairment">Mobility Impairment</label>
+       <select id="Mobility Impairment" name="Mobility Required">
+        <option value=""> </option>
+        <option value="Weelchair">Weelchair</option>
+        <option value="Walking Stick">Walking Stick</option>
+        <option value="Other">Other</option>
+      </select><hr>
+      <label for="Sensory Impairment">Sensory Impairment</label>
+      <select id="Sensory Impairment" name="Sensory Required">
+        <option value=""> </option>
+        <option value="Speech Impairment">Speech Impairment</option>
+        <option value="Visual Impairment">Visual Impairment</option>
+        <option value="Deaf">Deaf</option>
+      </select><hr>
+      <label for="Non-sensory Impairment">Non-sensory Impairment</label>
+      <select id="Non-sensory Impairment" name="Sensory Required">
+        <option value=""> </option>
+        <option value="Dyslexia">Dyslexia</option>
+        <option value="Autism">Autism</option>
+        <option value="Dementia">Dementia</option>
+      </select>
+      <a type="submit" class="btn1" href="profile.php">Submit</a>
+    </form>
+<!-- footer -->
+<div class="container">
+  <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="blogpage.html" class="nav-link px-2 text-muted">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 Company, Inc</p>
+  </footer>
+</div>
+<!-- footer end-->
+</body>
+</html>
